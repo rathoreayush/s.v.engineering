@@ -1,16 +1,622 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
+<html lang="en">
 
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+<head>
+    <title>S.V Engineering || About</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#9d4edd">
+    <meta name="title" content="The Puzzles">
+    <meta name="description" content="Digital Marketing and IT Consulation and Service Company">
+    <meta name="keywords"
+        content="Best Digital Marketing and IT Consulation and Service Company in Muzaffarpur, Best Webdevlopment company in bihar, Best Digital Marketing company in bihar, Best Graphic design in Bihar, Best Animation Company in Bihar Muzaffarpur">
+    <meta property="og:title" content="The Puzzles">
+    <meta property="og:image" content="https://www.thepuzzles.tech//assets/image/logo.png">
+    <meta property="og:image:alt" content="The Puzzles">
+    <meta property="og:description" content="Digital Marketing and IT Consulation and Service Company">
+    <meta property="og:url" content="https://www.thepuzzles.tech" />
+    <meta property="og:site_name" content="The Puzzles" />
+    <meta property="og:locale" content="ne_NP" />
+    <meta name="author" content="The Puzzles" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="Robots" content="INDEX,FOLLOW" />
+    <meta name="Googlebot" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <!--logo-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/image/favicon-16x16.png">
+    <link rel="manifest" href="assets/image/site.webmanifest">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        /* user-select: none; */
+        font-family: 'Poppins', sans-serif;
+        transition: 0.5s;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* logo brand name style start */
+    .navbar-brand span:nth-child(2) {
+        color: rgb(255, 136, 0);
+        font-family: serif;
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .navbar-brand span:nth-child(3) {
+        font-size: 25px;
+        color: green;
+        font-family: monospace;
+    }
+
+    .navbar-brand img {
+        margin-bottom: 5%;
+    }
+
+    /* logo brand name style end */
+    /* nav style start */
+    .bg-primary {
+        background-color: #ffffff !important;
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #555555 !important;
+    }
+
+    .navbar-dark .navbar-brand {
+        color: #555555 !important;
+        margin-left: 20px;
+    }
+
+    .navbar-toggler-icon {
+        background-color: black;
+    }
+
+    .navbar-nav li ul.dropdown-menu {
+        font-size: 13px;
+    }
+
+    .dropdown-menu {
+        border-top: 2px solid #72c02c;
+    }
+
+    .nav-item a:hover {
+        color: red !important;
+    }
+
+    /* Remove border from toggler */
+    .navbar-toggler {
+        border: 0;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active,
+    .navbar-toggler-icon:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+
+    /* Lines of the Toggler */
+    .toggler-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #e74c3c;
+
+        display: block;
+        transition: all 0.2s;
+    }
+
+    /* Adds Space between the lines */
+    .middle-bar {
+        margin: 5px auto;
+    }
+
+    /* State when navbar is opened (START) */
+    .navbar-toggler .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+
+    .navbar-toggler .middle-bar {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+    .navbar-toggler .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+
+    /* State when navbar is opened (END) */
+
+    /* State when navbar is collapsed (START) */
+    .navbar-toggler.collapsed .top-bar {
+        transform: rotate(0);
+    }
+
+    .navbar-toggler.collapsed .middle-bar {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .navbar-toggler.collapsed .bottom-bar {
+        transform: rotate(0);
+    }
+
+    /* State when navbar is collapsed (END) */
+
+    /* Color of Toggler when collapsed */
+    .navbar-toggler.collapsed .toggler-icon {
+        background-color: #777777;
+    }
+
+    /* nav style end */
+
+
+    /* Banner style start*/
+    .banner {
+        background-image: url(/assets/image/inner-header.jpeg);
+        width: 100%;
+        height: 10rem;
+        position: relative;
+    }
+
+    .banner h2 {
+        background: none;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        padding: 5% 6%;
+        text-shadow: 0 0 2px rgb(0 0 0)
+    }
+
+    /* Banner style end*/
+
+    /* Article section style start*/
+    .container {
+        width: 1180px;
+        padding: 0 15px;
+        margin: 0 auto;
+        font-size: 14px;
+        color: #555;
+        font-weight: 500;
+        font-family: 'Maven Pro', sans-serif;
+        ;
+    }
+
+    article {
+        border-right: 1px solid #ccc;
+        float: left;
+        margin-top: 4%;
+        padding-right: 3%;
+        width: 70%;
+        display: block;
+    }
+
+    p {
+        padding-top: 15px;
+
+    }
+
+    h3 {
+        font-size: 16px;
+        color: #333;
+        padding-top: 26px;
+        font-weight: bold;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    li {
+        padding-top: 10px;
+    }
+
+    /*Table Design Star*/
+
+    tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+
+    tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+
+    .machinerecord {
+        margin-top: 10px;
+    }
+
+    .machinerecord tr th {
+        background: #333;
+        color: #fff;
+        text-align: left;
+        font-size: 16px;
+        padding: 8px 4px;
+    }
+
+    .machinerecord tr td {
+        padding: 10px;
+        border: solid 2px #f8f8f8;
+    }
+    /* Table end*/
+</style>
+
+<body>
+    <!-- ============= nav-start ============== -->
+
+    <!-- ============= COMPONENT ============== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="assets/image/sv logo copy.jpg" alt="logo" width="60px">
+                <span>S.V.
+                </span>
+                <span>Engineering </span></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"> HOME </a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"> ABOUT US </a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> PRODUCTS GALLERY </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="dropdown-item" href="#"> PRODUCTS </a></li>
+                            <li><a class="dropdown-item" href="#"> EQUIPMENTS </a> </li>
+                            <li><a class="dropdown-item" href="#"> INSTRUMENTS </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> CAREERS </a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"> CONTACT US </a></li>
+                </ul>
+
+            </div> <!-- navbar-collapse.// -->
+        </div> <!-- container-fluid.// -->
+    </nav>
+
+    <!-- ============= COMPONENT END// ============== -->
+
+    <!--Banner start-->
+    <div class="banner">
+        <h2>About Us</h2>
+    </div>
+    <!--Banner end-->
+
+    <!--Article section start-->
+    <div class="container">
+        <article>
+            <p>
+                S.V Engineering was established in 2005 as a Proprietorship company having manufacturing location at
+                Odhav, Ahmedabad in Gujarat State. The company is certified by M/s BSCIC Certification Pvt. Ltd. The
+                company is manufacturing and capable of supplying all type of Machine part, Spare of Gauge & Fixture.
+            </p>
+            <p>
+                The company has shown consistent improvement in its performance over the years in the automotive
+                segments & is poised for good growth.
+            </p>
+
+            <h3>QUALITY POLICY</h3>
+            <p>
+                At S.V Engineering we shall strive for Total Customer Satisfaction by supplying them Quality Turned
+                Components within committed time frame. To achieve this continual improvement philosophy will be adhered
+                to.
+            </p>
+
+            <h3>QUALITY OBJECTIVE</h3>
+            <ul>
+                <li>To Enhance Customer Satisfaction</li>
+                <li>To ensure timely deliveries to customers.</li>
+                <li>To reduce wastages in our manufacturing operations.</li>
+                <li>To minimize Non conforming products by effective monitoring of processes</li>
+            </ul>
+            <div class="clr"></div>
+            <h3>MAJOR CUSTOMER</h3>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="machinerecord"
+                style="overflow-x:auto;">
+                <tbody>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Customer Name</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Badve Autotech Pvt Ltd.4P </td>
+                        <td>Vithalpur</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Badve Engineering Ltd. </td>
+                        <td>Karnataka</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ask Automotive Pvt. Ltd.</td>
+                        <td>Vithalpur, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Badve Engineering Ltd. Unit-6G</td>
+                        <td>Pithampur, Indore</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Bsto Automative Parts India Pvt. Ltd.</td>
+                        <td>Halol, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Caparo Eng.India Ltd. </td>
+                        <td>Vithalpur, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Eximius Autocomps Pvt. Ltd.</td>
+                        <td>Halol, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Futaba Ind.Co. Ltd.</td>
+                        <td>Vithalpur, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Hendo Industries</td>
+                        <td>Maharashtra</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Hirotec Mark Exhaust System Pvt. Ltd.</td>
+                        <td>Mahesana, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Indo Autotech Ltd Unit-5.</td>
+                        <td>Karnataka, Banglore</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Indo Autotech Ltd.</td>
+                        <td>Rajasthan</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Indo Autotech Ltd Unit-7.</td>
+                        <td>Vithalpur, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Instant Procurement Services Pvt Ltd.</td>
+                        <td>Pune, Maharashtra</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Jay Bharat Maruti Ltd.</td>
+                        <td>Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>JBM Auto Ltd.</td>
+                        <td>Sanad</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>JBM Auto Ltd.</td>
+                        <td>MP</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Kirloskar Brother Ltd.</td>
+                        <td>Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>KML Seating Plant-3.</td>
+                        <td>Vithalpur, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Krishna Ishizaki Auto Ltd.</td>
+                        <td>Vithalpur, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>Larson & Toubro Ltd.</td>
+                        <td>Ahmedabad</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>M.C. Mowjee & Co. Pvt. Ltd.</td>
+                        <td>Kolkata</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>Mgrs Metal Processors Pvt. Ltd.</td>
+                        <td>Mandal, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>Futaba Ind.Co. Ltd.</td>
+                        <td>Vithalpur, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>Munjal Auto Industries Ltd.</td>
+                        <td>Halol, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>Nahars Engineering India Pvt. Ltd.</td>
+                        <td>Kolar, Karnataka</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>Nagta Auto Engineering India Pvt.Ltd.</td>
+                        <td>India</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>Neel Metal Products Ltd.</td>
+                        <td>Haridwar</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>Parc Robotic System Pvt.Ltd.</td>
+                        <td>Pune</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>Sandhar Engineering pvt.Ltd.</td>
+                        <td>Halool, Gujarat</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>Swastid Engineering pvt.Ltd. Unit-2P</td>
+                        <td>Kolar, Karnataka</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>Tooltech Engineering Industries.</td>
+                        <td>Rajasthan</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <h3>RANGE OF MACHINERY</h3>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="machinerecord">
+                <tbody>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Machine Name (Inhouse Capacity)</th>
+                        <th>Capacity</th>
+                        <th>Qty.(NOs.)</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Lathe Machine </td>
+                        <td>--</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Drilling Machine </td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Shapping Machine </td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Shapping Machine </td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Surface Grinder </td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Slotting Machine </td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>VMC Machine </td>
+                        <td>400*600 With ATC</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>VMC Machine </td>
+                        <td>500*800 With ATC & Rottery</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>WireCut Machine </td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <h3>TOOL FACILITIES</h3>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="machinerecord">
+            	<tbody><tr>
+                	<th>S.No.</th>
+                    <th>Tool Name</th>
+                    <th>Type</th>
+                </tr>
+              <tr>
+                <td>1</td>
+                <td>Bending Die Set. </td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Press Tool. </td>
+                <td>Blankig, Pie Bending, Forming Die</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Pipe Cutting Jig.</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Gauge.</td>
+                <td>--</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Wiper Die</td>
+                <td>--</td>
+              </tr>
+            </tbody></table>
+        </article>
+    </div>
+    <!--Article End-->
+
+</body>
