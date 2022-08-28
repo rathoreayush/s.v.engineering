@@ -177,24 +177,56 @@
   /* nav style end */
 
   /* content box start */
-  img.d-block.w-100 {
-    height: 35rem;
-}
+  .imageSlider {
+    background-image: url(assets/portfolios/animinated1.jpeg);
+    box-sizing: border-box;
+    place-items: center;
+    width: 100%;
+    height: 27rem;
+    display: grid;
+    background-size: cover;
+    animation: changeImage 100s infinite ease-in-out;
+  }
 
-.h5, h5 {
+  @keyframes changeImage {
+    0% {
+      background-image: url(assets/portfolios/animinated1.jpeg);
+    }
+
+    25% {
+      background-image: url(assets/portfolios/diedesign.jpeg);
+    }
+
+    50% {
+      background-image: url(assets/portfolios/jigs&fixture.jpeg);
+    }
+
+    75% {
+      background-image: url(assets/portfolios/compund\ die.jpeg);
+    }
+
+    100% {
+      background-image: url(assets/portfolios/vmc_machine.jpg);
+    }
+  }
+  .imageSlider h5 {
     font-size: 1.40rem;
     color: black;
     font-weight: bolder;
     background: #fff;
+    text-align: center;
+    position: relative;
+    top: 13rem;
 }
-
-.carousel-inner p {
-    margin-top: 0;
-    margin-bottom: 2rem;
-    font-size: 1.3rem;
+.imageSlider p {
+    font-size: 1.1rem;
     color: blanchedalmond;
     background: black;
+    position: relative;
+    bottom: -4rem;
+    text-align: center;
 }
+
   /* content box end */
 
   /* what we do start */
@@ -271,15 +303,16 @@
     left: 50%;
     transform: translateX(-50%);
   }
-.content_down li {
+
+  .content_down li {
     font-size: 14px;
     color: #555;
     font-weight: 500;
     font-family: 'Maven Pro', sans-serif;
     padding: 2px;
     margin-left: 4rem;
-}
- 
+  }
+
 
   /* services box end */
 
@@ -549,9 +582,10 @@
       font-size: 20px;
       margin-left: 3rem;
     }
+
     img.d-block.w-100 {
-    height: 18rem;
-}
+      height: 18rem;
+    }
 
   }
 
@@ -632,40 +666,16 @@
 
 
   <!-- container //  -->
+  <!--carousel start-->
+
+  <div class="imageSlider">
+    <h5>WE ARE BEST TOOL MANUFACTURER IN INDUSTRIES </h5>
+    <p>We Provide Innovative and Cost Effective industrial solution.</p>
+  </div>
+
+  <!--carousel start end-->
 
   <main>
-
-
-    <!--carousel start-->
-
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/image/coursel1.jpg" alt="First slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>WE ARE BEST TOOL INDUSTRIES</h5>
-            <p>We Provide Innovative and Cost Effective industrial solution.</p>
-          </div>
-        </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="assets/image/coursel2.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="assets/image/coursel3.jpg" alt="Third slide">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="false"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    <!--carousel start end-->
 
     <!-- what we do start //  -->
     <div class="about-puzzles">
@@ -674,31 +684,32 @@
         <div class="paragraph"> Manufacturer of machine part, machinery spares & other products since 2005 in
           Ahmedabad, Gujarat. </div>
         <p>S.V Engineering was established in 2005 as a Proprietorship company having manufacturing location at
-          Odhav, Ahmedabad in Gujarat State. The company is certified by M/s BSCIC Certification Pvt. Ltd. The company is
+          Odhav, Ahmedabad in Gujarat State. The company is certified by M/s BSCIC Certification Pvt. Ltd. The company
+          is
           manufacturing and capable of supplying all type of Machine part, Spare of Gauge & Fixture.</p>
       </div>
       <button><a href="about.html">Read More</a></button>
     </div>
     <!-- what we do end //  -->
 
-<!--Product start-->
+    <!--Product start-->
 
     <div class="content_down">
       <h1>
         SPECIALIST IN
       </h1>
-    <ul>
-      <li>&diams; GAUGE DESIGN</li>
-      <li>&diams; PROCESS GAUGE</li>
-      <li>&diams; FINAL INSP. GAUGE</li>
-      <li>&diams; BENDING GAUGE</li>
-      <li>&diams; BENDING DIE</li>
-      <li>&diams; FORMING DIE</li>
-      <li>&diams; BLANKING DIE</li>
-      <li>&diams; COMPOUND DIE</li>
-      <li>&diams; ALL TYPE OF SPARE OF GAUGE & FIXTURE</li>
-    </ul>
-     
+      <ul>
+        <li>&diams; GAUGE DESIGN</li>
+        <li>&diams; PROCESS GAUGE</li>
+        <li>&diams; FINAL INSP. GAUGE</li>
+        <li>&diams; BENDING GAUGE</li>
+        <li>&diams; BENDING DIE</li>
+        <li>&diams; FORMING DIE</li>
+        <li>&diams; BLANKING DIE</li>
+        <li>&diams; COMPOUND DIE</li>
+        <li>&diams; ALL TYPE OF SPARE OF GAUGE & FIXTURE</li>
+      </ul>
+
     </div>
 
     <!--Product section end-->
@@ -712,8 +723,8 @@
         <div class="hire-second">
           Connect Us and Get Best Machinery Part Today
         </div>
-        <button><a href="contact.html">Connect Now</a> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32"
-            height="32" viewBox="0 0 32 32" style=" fill:whitesmoke;">
+        <button><a href="contact.html">Connect Now</a> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="32" height="32" viewBox="0 0 32 32" style=" fill:whitesmoke;">
             <path
               d="M 15 3 L 15 5.203125 C 13.746458 5.3226114 12.535738 5.5504288 11.439453 6.0566406 L 10.388672 4.2304688 L 8.6542969 5.2265625 L 9.7773438 7.1796875 C 8.8858169 7.8111722 8.1160288 8.5185317 7.4472656 9.3808594 L 5.5644531 8.1835938 L 4.4921875 9.8710938 L 6.328125 11.037109 C 5.6998636 12.251672 5.3388374 13.576229 5.203125 15 L 3 15 L 3 17 L 5.203125 17 C 5.3226112 18.253541 5.5504295 19.464262 6.0566406 20.560547 L 4.2304688 21.611328 L 5.2265625 23.345703 L 7.1796875 22.222656 C 7.8111715 23.114183 8.5185323 23.883971 9.3808594 24.552734 L 8.1835938 26.435547 L 9.8710938 27.507812 L 11.037109 25.671875 C 12.251672 26.300137 13.576228 26.661162 15 26.796875 L 15 29 L 17 29 L 17 26.796875 C 18.253542 26.677389 19.464262 26.449571 20.560547 25.943359 L 21.611328 27.769531 L 23.345703 26.773438 L 22.222656 24.820312 C 23.114183 24.188828 23.883971 23.481468 24.552734 22.619141 L 26.435547 23.816406 L 27.507812 22.128906 L 25.671875 20.962891 C 26.300136 19.748328 26.661163 18.423771 26.796875 17 L 29 17 L 29 15 L 26.796875 15 C 26.677389 13.746459 26.449571 12.535738 25.943359 11.439453 L 27.769531 10.388672 L 26.773438 8.6542969 L 24.820312 9.7773438 C 24.188828 8.8858165 23.481468 8.1160294 22.619141 7.4472656 L 23.816406 5.5644531 L 22.128906 4.4921875 L 20.962891 6.328125 C 19.748328 5.6998628 18.423772 5.3388376 17 5.203125 L 17 3 L 15 3 z M 15 7.2011719 L 15 10.080078 C 13.539619 10.29395 12.334648 10.961655 11.501953 11.898438 C 10.485347 13.042118 10 14.527778 10 16 C 10 16.709351 10.119124 17.419869 10.349609 18.095703 L 7.7558594 19.583984 C 7.2782475 18.48401 7 17.278664 7 16 C 7 11.372697 10.514824 7.7186361 15 7.2011719 z M 17 7.2011719 C 21.485176 7.7186361 25 11.372697 25 16 C 25 17.422455 24.605375 18.719926 24.021484 19.914062 L 21.527344 18.328125 C 21.831435 17.611301 22 16.82482 22 16 C 22 13.039616 19.82834 10.572078 17 10.091797 L 17 7.2011719 z M 16 12 C 18.220986 12 20 13.779015 20 16 C 20 18.220985 18.220986 20 16 20 C 14.583334 20 13.648107 19.504756 12.998047 18.773438 C 12.347987 18.042119 12 17.027778 12 16 C 12 14.972222 12.347987 13.957881 12.998047 13.226562 C 13.648107 12.495245 14.583334 12 16 12 z M 11.302734 19.853516 C 11.36869 19.93678 11.43081 20.021526 11.501953 20.101562 C 12.518559 21.245244 14.083334 22 16 22 C 17.761782 22 19.347401 21.227922 20.447266 20.009766 L 22.90625 21.572266 C 21.258504 23.615419 18.838262 25 16 25 C 13.020883 25 10.513604 23.468169 8.8769531 21.248047 L 11.302734 19.853516 z">
             </path>
@@ -723,7 +734,7 @@
 
     <!-- hire section end //  -->
 
- 
+
 
 
     <!-- footer section start //  -->
@@ -735,16 +746,13 @@
               <div class="footer-logo">
                 <img src="assets/image/sv logo copy.png" alt="logo">
               </div>
-            <!--  <p>S.V Engineering</p>-->
+              <!--  <p>S.V Engineering</p>-->
             </div>
             <div class="social">
-              <a href="#" target="blank"><span
-                  class="fab fa-facebook-f"></span></a>
+              <a href="#" target="blank"><span class="fab fa-facebook-f"></span></a>
               <a href="#"><span class="fab fa-twitter"></span></a>
-              <a href="#" target="blank"><span
-                  class="fab fa-instagram"></span></a>
-              <a href="#" target="blank"><span
-                  class="fab fa-youtube"></span></a>
+              <a href="#" target="blank"><span class="fab fa-instagram"></span></a>
+              <a href="#" target="blank"><span class="fab fa-youtube"></span></a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
@@ -777,6 +785,20 @@
                   <br>
                   Odhav, Ahmedabad,
                   <br>
+                  <div class="img"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                      viewBox="0 0 172 172" style=" fill:#000000;">
+                      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#34495e">
+                          <path
+                            d="M20.64,0c-5.65719,0 -10.32,4.66281 -10.32,10.32v113.52c0,5.65719 4.66281,10.32 10.32,10.32h48.16v-6.88h-48.16c-1.94844,0 -3.44,-1.49156 -3.44,-3.44v-113.52c0,-1.94844 1.49156,-3.44 3.44,-3.44h68.8c1.94844,0 3.44,1.49156 3.44,3.44v24.08h6.88v-24.08c0,-5.65719 -4.66281,-10.32 -10.32,-10.32zM26.875,13.76c-1.63937,0.30906 -2.82187,1.76031 -2.795,3.44v89.44c0,1.89469 1.54531,3.44 3.44,3.44h41.28v-6.88h-37.84v-82.56h48.16v13.76h6.88v-17.2c0,-1.89469 -1.54531,-3.44 -3.44,-3.44h-55.04c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM82.56,37.84c-5.65719,0 -10.32,4.66281 -10.32,10.32v113.52c0,5.65719 4.66281,10.32 10.32,10.32h68.8c5.65719,0 10.32,-4.66281 10.32,-10.32v-113.52c0,-5.65719 -4.66281,-10.32 -10.32,-10.32zM82.56,44.72h68.8c1.94844,0 3.44,1.49156 3.44,3.44v113.52c0,1.94844 -1.49156,3.44 -3.44,3.44h-68.8c-1.94844,0 -3.44,-1.49156 -3.44,-3.44v-113.52c0,-1.94844 1.49156,-3.44 3.44,-3.44zM88.795,51.6c-1.63937,0.30906 -2.82187,1.76031 -2.795,3.44v89.44c0,1.89469 1.54531,3.44 3.44,3.44h55.04c1.89469,0 3.44,-1.54531 3.44,-3.44v-89.44c0,-1.89469 -1.54531,-3.44 -3.44,-3.44h-55.04c-0.1075,0 -0.215,0 -0.3225,0c-0.1075,0 -0.215,0 -0.3225,0zM92.88,58.48h48.16v82.56h-48.16zM55.04,113.52c-2.84875,0 -5.16,2.31125 -5.16,5.16c0,2.84875 2.31125,5.16 5.16,5.16c2.84875,0 5.16,-2.31125 5.16,-5.16c0,-2.84875 -2.31125,-5.16 -5.16,-5.16zM116.96,151.36c-2.84875,0 -5.16,2.31125 -5.16,5.16c0,2.84875 2.31125,5.16 5.16,5.16c2.84875,0 5.16,-2.31125 5.16,-5.16c0,-2.84875 -2.31125,-5.16 -5.16,-5.16z">
+                          </path>
+                        </g>
+                      </g>
+                    </svg></div>
                   Phone:+919824904249
                   <br>
                   GST No: 24BPKPP8901H1ZO
